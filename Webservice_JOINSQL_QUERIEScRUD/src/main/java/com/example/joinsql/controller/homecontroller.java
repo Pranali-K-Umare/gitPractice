@@ -22,4 +22,15 @@ public class homecontroller {
 		return "save";
 	}
 
+        @GetMapping("/getCus")
+        public List<Customer> getCustData()
+        {
+
+         List<Customer> clist=hsi.getAllCustData();
+         return clist;
+
+        }
+
+     
+
 }
