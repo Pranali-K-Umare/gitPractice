@@ -17,6 +17,7 @@ public class homecontroller {
 	@PostMapping("/insertCus")
 	public String saveCusData(@RequestBody OrderRequest request )
 	{
+		System.out.println("pranalis code here");
 		System.out.println("gitpractice code");
 		hsi.saveCustdata(request);
 		return "save";
